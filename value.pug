@@ -1,0 +1,89 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title #{title}
+  // Navbar css dosyaları
+  link(rel='stylesheet' href='/css/index/navbar/navbar.css')
+  // Portifolio css dosyaları
+  link(rel='stylesheet' href='/css/index/index-Container-3/container3.css')
+  // Recipes css dosyaları
+  link(rel='stylesheet' href='/css/Recipescss/recipes.css')
+  // Header width-991px css dosyaları
+  link(rel='stylesheet' href='/css/index/header-991px/header-maxwitdh991px.css')
+  //title icon
+  
+  link(rel='icon' href='/titleicon.png' type='image/icon type')
+  // font awesome
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css')
+  // Fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap' rel='stylesheet')
+  // Logo Google Fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap' rel='stylesheet')
+  style.
+    a:link{
+    color: #000000;
+    }
+    a:visited{
+    color: #000000;
+    }
+nav
+  input#check(type='checkbox')
+  label.checkbtn(for='check')
+    i.fas.fa-bars
+  label.logo 
+    a(href="/") TASTEFULL
+  ul
+    li
+      a.active(href='/categories') Recipes
+    li
+      a.active(href='/categories/quickandeasy') Quick and Easy
+    li
+      a.active(href='/categories/snack') Snack
+    li
+      a.active(href='/categories/drink') Drink
+    li
+      a.active(href='/categories/dessert') Dessert
+    li
+      a.active(href='/categories/healty') Healty
+.none
+.advertisement-970-250
+  img(src='/970x250.jpg' alt='')
+.advertisement-768px
+  img(src='/970x250.jpg' alt='')
+.advertisement--mobil
+  img(src='/970x250.jpg' alt='')
+section#portfolio
+  .portifolio
+    each infos in info
+      a(href=`${a}${infos.id}`) 
+        .portifolio-item
+          img(src=`${path}${infos.img}` alt='')
+          //- .overlay
+          //-   h6 
+          //-   i.fas.fa-utensils
+          .portifolio-title #{infos.name}
+section#portfolio
+  .portifolio-991px
+    each infos in info
+     a(href=`${a}${infos.id}`)
+      .portifolio-item-991px
+        img(src=`${path}${infos.img}` alt='')
+        //- .overlay
+        //-   h6 #{infos.name}
+        //-   i.fas.fa-utensils
+        .portifolio-title-991px #{infos.name}
+.advertisement-580-400
+  img(src='/970x250.jpg' alt='')
+.advertisement-768px
+  img(src='/970x250.jpg' alt='')
+.advertisement--mobil
+  img(src='/970x250.jpg' alt='')

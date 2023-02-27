@@ -1,0 +1,413 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Recipes | TastefullRecipes
+  meta(name='description' content='Tastefull Recipes is here to help you cook delicious meals with less effort and more joy. We offer recipes and cooking advice for home cooks, by home cooks. ')
+  // Css navbar dosyaları
+  link(rel='stylesheet' href='/css/index/navbar/navbar.css')
+  // font awesome
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css')
+  // Slider css dosyaları
+  link(rel='stylesheet' href='/css/index/slider/slider.css')
+  // Header menu css dosyaları
+  link(rel='stylesheet' href='/css/Recipespages/header.css')
+  // Container 2 css dosyaları
+  link(rel='stylesheet' href='/css/index/main-container2/container2.css')
+  // Container-3 Css dosyaları
+  link(rel='stylesheet' href='/css/index/index-Container-3/container3.css')
+  // Footer css dosyaları
+  link(rel='stylesheet' href='/css/index/footer/footer.css')
+  // Header width-991px css dosyaları
+  link(rel='stylesheet' href='/css/index/header-991px/header-maxwitdh991px.css')
+  // Fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap' rel='stylesheet')
+  //title icon
+  link(rel='icon' href='/titleicon.png' type='image/icon type')
+
+  // Logo Google Fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap' rel='stylesheet')
+  style.
+    a:link{
+    color: #000000;
+    }
+    a:visited{
+    color: #000000;
+    }
+
+nav
+  input#check(type='checkbox')
+  label.checkbtn(for='check')
+    i.fas.fa-bars
+  label.logo 
+    a(href="/") TASTEFULL
+  ul
+    li
+      a.active(href='/categories') Recipes
+    li
+      a.active(href='/categories/quickandeasy') Quick and Easy
+    li
+      a.active(href='/categories/snack') Snack
+    li
+      a.active(href='/categories/drink') Drink
+    li
+      a.active(href='/categories/dessert') Dessert
+    li
+      a.active(href='/categories/healty') Healty
+.none
+header
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .flex
+    .header-menu.header-menu768px
+      a(href='/categories/dinner') Dinner
+      a(href='/categories/lunch') Lunch
+      a(href='/categories/breakfast') Breakfast
+      a(href='/categories/dessert') Dessert
+      a(href='/categories/drink') Drink
+      a(href='/categories/salad') Salad
+    .advertisement-mobil
+      img(src='/indir.jpg' alt='')
+  section#portfolio
+    .portifolio-991px
+      a(href='/categories/dinner')
+        .portifolio-item-991px
+          img(src='./img/dinner2.jpg' alt='')
+          .overlay
+            h6 Dinner
+            i.fas.fa-utensils
+          .portifolio-title-991px DINNER
+      a(href='/categories/lunch')
+        .portifolio-item-991px
+          img(src='/img/lunch2.jpg' alt='')
+          .overlay
+            h6 Lunch
+            i.fas.fa-utensils
+          .portifolio-title-991px LUNCH
+      a(href='/categories/breakfast')
+        .portifolio-item-991px
+          img(src='/img/breakfast2.jpg' alt='')
+          .overlay
+            h6 Breakfast
+            i.fas.fa-utensils
+          .portifolio-title-991px BREAKFAST
+      a(href='/categories/snack')
+        .portifolio-item-991px
+          img(src='/img/snack.jpg' alt='')
+          .overlay
+            h6 Snack
+            i.fas.fa-utensils
+          .portifolio-title-991px SNACK
+      a(href='/categories/dessert')
+        .portifolio-item-991px
+          img(src='/img/dessert2.jpg' alt='')
+          .overlay
+            h6 Dessert
+            i.fas.fa-utensils
+          .portifolio-title-991px DESSERT
+      a(href='/categories/drink')
+        .portifolio-item-991px
+          img(src='/img/drink2.jpg' alt='')
+          .overlay
+            h6 Drink
+            i.fas.fa-utensils
+          .portifolio-title-991px DR&Idot;NK
+      a(href='/categories/salad')
+        .portifolio-item-991px
+          img(src='./img/salad2.jpg' alt='')
+          .overlay
+            h6 Salad
+            i.fas.fa-utensils
+          .portifolio-title-991px SALAD
+      a(href='/categories/bread')
+        .portifolio-item-991px
+          img(src='/img/bread.jpg' alt='')
+          .overlay
+            h6 Bread
+            i.fas.fa-utensils
+          .portifolio-title-991px BREAD
+  .container
+    .advertisement
+      img(src='/300-600-REKLAM-ALANI.png' alt='')
+    .slider
+      .slider-content
+        a(href='#')
+          .slider-item
+            img(src='/css/index/slider/dinner.jpg' alt='')
+        a(href='#')
+          .slider-item
+            img(src='/css/index/slider/lunch.jpg' alt='')
+        a(href='#')
+          .slider-item
+            img(src='/css/index/slider/desserts.jpg' alt='')
+main.main
+  a(href='/categories/dinner')
+    .title
+      h3 Dinner Recipes
+      i.fas.fa-arrow-right
+  .container2-768px
+    .card-768px
+      a(href='/categories/dinner')
+        img(src='/img/dinner.jpg')
+      p Lorem, ipsum dolor.
+  .container2
+    a(href='/categories/dinner/12')
+      .menu
+        .card
+          img(src='/img/dinner/10.jpg')
+          p.menu-p Maple-glazed Salmon
+    a(href='/categories/dinner/1')
+      .menu
+        .card
+          img(src='/img/dinner/1.jpg')
+          p.menu-p Chimichurri Baked Chicken
+    a(href='/categories/dinner/3')
+      .menu
+        .card
+          img(src='/img/dinner/3.jpg')
+          p.menu-p Spaghetti With Garlic And Oil
+  .advertisement-2
+    img(src='./indir.jpg' alt='')
+  .advertisement-728px
+    img(src='./indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='./indir.jpg' alt='')
+  a(href='/categories/lunch')
+    .title
+      h3 Lunch Recipes
+      i.fas.fa-arrow-right
+  .container2-768px
+    .card-768px
+      a(href='/categories/lunch')
+        img(src='/img/lunch.jpg')
+      p Lorem, ipsum dolor.
+  .container2
+    a(href='/categories/lunch/7')
+      .menu
+        .card
+          img(src='/img/lunch/7.jpg')
+          p.menu-p Egg Salad for Sandwiches
+    a(href='/categories/lunch/1')
+      .menu
+        .card
+          img(src='/img/lunch/1.jpg')
+          p.menu-p Nashville Hot Chicken
+    a(href='/categories/lunch/4')
+      .menu
+        .card
+          img(src='/img/lunch/4.jpg')
+          p.menu-p Lorem, ipsum dolor.
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
+  a(href='/categories/breakfast')
+    .title
+      h3 Breakfast Recipes
+      i.fas.fa-arrow-right
+  .container2-768px
+    .card-768px
+      a(href='/categories/breakfast')
+        img(src='/img/breakfast.jpg')
+      p Lorem, ipsum dolor.
+  .container2
+    a(href='/categories/breakfast/7')
+      .menu
+        .card
+          img(src='/img/breakfast/6.jpg')
+          p.menu-p Sugar Free Granola
+    a(href='/categories/breakfast/1')
+      .menu
+        .card
+          img(src='/img/breakfast/1.1.jpg')
+          p.menu-p Old Fashioned Pancakes
+    a(href='/categories/breakfast/3')
+      .menu
+        .card
+          img(src='/img/breakfast/3.jpg')
+          p.menu-p Eggnog French Toast
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
+  a(href='/categories/dessert')
+    .title
+      h3 Dessert Recipes
+      i.fas.fa-arrow-right
+  .container2-768px
+    .card-768px
+      a(href='/categories/dessert')
+        img(src='/img/dessert.jpg')
+      p Lorem, ipsum dolor.
+  .container2
+    a(href='/categories/dessert/3')
+      .menu
+        .card
+          img(src='/img/dessert/2.2.jpg')
+          p.menu-p Dessert Crepes
+    a(href='/categories/dessert/5')
+      .menu
+        .card
+          img(src='/img/dessert/4.1.jpg')
+          p.menu-p Vegan Cupcakes
+    a(href='Vegan Cupcakes')
+      .menu
+        .card
+          img(src='/img/dessert/5.1.jpg')
+          p.menu-p Chocolate Cupcakes
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
+  a(href='/categories/drink')
+    .title
+      h3 Drink Recipes
+      i.fas.fa-arrow-right
+  .container2-768px
+    .card-768px
+      a(href='/categories/drink')
+        img(src='/img/drink.jpg')
+      p Lorem, ipsum dolor.
+  .container2
+    a(href='/categories/drink/1')
+      .menu
+        .card
+          img(src='/img/drink/1.1.jpg')
+          p.menu-p Cappuccino Cooler
+    a(href='#')
+      .menu
+        .card
+          img(src='/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg')
+          p.menu-p Lorem, ipsum dolor.
+    a(href='#')
+      .menu
+        .card
+          img(src='/CupCake.jpg')
+          p.menu-p Lorem, ipsum dolor.
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
+  a(href='/categories/salad')
+    .title
+      h3 Salad Recipes
+      i.fas.fa-arrow-right
+  .container2-768px
+    .card-768px
+      a(href='/categories/salad')
+        img(src='/img/salad.jpg')
+      p Lorem, ipsum dolor.
+  .container2
+    a(href='/categories/salad/1')
+      .menu
+        .card
+          img(src='/img/salad/1.jpg')
+          p.menu-p Chicken Salad with Tarragon
+    a(href='/categories/salad/8')
+      .menu
+        .card
+          img(src='/img/salad/5.5.jpg')
+          p.menu-p Vegetable Salad
+    a(href='/categories/salad/6')
+      .menu
+        .card
+          img(src='/img/salad/3.3.jpg')
+          p.menu-p Super Green Salad
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
+a(href='/categories')
+  .title.title-991px
+    h3 All Recipes
+    i.fas.fa-arrow-right
+section#portfolio
+  .portifolio
+    a(href='/categories/dinner')
+      .portifolio-item
+        img(src='/img/dinner2.jpg' alt='')
+        .overlay
+          h6 Dinner
+          i.fas.fa-utensils
+        .portifolio-title DINNER
+    a(href='/categories/lunch')
+      .portifolio-item
+        img(src='/img/lunch2.jpg' alt='')
+        .overlay
+          h6 LUNCH
+          i.fas.fa-utensils
+        .portifolio-title LUNCH
+    a(href='/categories/breakfast')
+      .portifolio-item
+        img(src='/img/breakfast2.jpg' alt='')
+        .overlay
+          h6 BREAKFAST
+          i.fas.fa-utensils
+        .portifolio-title BREAKFAST
+    a(href='/categories/snack')
+      .portifolio-item
+        img(src='/img/snack.jpg' alt='')
+        .overlay
+          h6 SNACK
+          i.fas.fa-utensils
+        .portifolio-title SNACK
+    a(href='/categories/drink')
+      .portifolio-item
+        img(src='/img/drink2.jpg' alt='')
+        .overlay
+          h6 DRINK
+          i.fas.fa-utensils
+        .portifolio-title DRINK
+    a(href='/categories/salad')
+      .portifolio-item
+        img(src='/img/salad2.jpg' alt='')
+        .overlay
+          h6 SALAD
+          i.fas.fa-utensils
+        .portifolio-title SALAD
+    a(href='/categories/dessert')
+      .portifolio-item
+        img(src='/img/dessert2.jpg' alt='')
+        .overlay
+          h6 DESSERT
+          i.fas.fa-utensils
+        .portifolio-title DESSERT
+    a(href='/categories/bread')
+      .portifolio-item
+        img(src='/img/bread.jpg' alt='')
+        .overlay
+          h6 BREAD
+          i.fas.fa-utensils
+        .portifolio-title BREAD
+footer
+  .footer
+    .title.title-991px
+    .social
+      .instagram
+        i.fab.fa-instagram
+        p
+          | birisii_57
+      .mail
+        i.far.fa-envelope-open
+        p birisiii57@gmail.com
+      .phone
+        i.fas.fa-phone
+        p 0555555555555

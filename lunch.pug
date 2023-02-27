@@ -1,0 +1,194 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Tastefull Lunch
+  // font awesome
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css')
+  // Navbar css dosyaları
+  link(rel='stylesheet' href='/css/index/navbar/navbar.css')
+  // Container2 css dosyaları
+  link(rel='stylesheet' href='/css/index/main-container2/container2.css')
+  // Header css dosyaları
+  link(rel='stylesheet' href='/css/Recipespages/header.css')
+  // Main css dosyaları
+  link(rel='stylesheet' href='/css/Recipespages/main.css')
+  //title icon
+  
+  link(rel='icon' href='/titleicon.png' type='image/icon type')
+  // Fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap' rel='stylesheet')
+  // Logo Google Fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap' rel='stylesheet')
+  style.
+    a:link,a:visited{
+    color: #000000;
+    }
+nav
+  input#check(type='checkbox')
+  label.checkbtn(for='check')
+    i.fas.fa-bars
+  label.logo 
+    a(href="/") TASTEFULL
+  ul
+    li
+      a.active(href='/categories') Recipes
+    li
+      a.active(href='/categories/quickandeasy') Quick and Easy
+    li
+      a.active(href='/categories/snack') Snack
+    li
+      a.active(href='/categories/drink') Drink
+    li
+      a.active(href='/categories/dessert') Dessert
+    li
+      a.active(href='/categories/healty') Healty
+.none
+header
+  .advertisement-970-250
+    img(src='/970x250.jpg' alt='')
+  .advertisement-728-90
+    img(src='/970x250.jpg' alt='')
+  .advertisement-300-100
+    img(src='/970x250.jpg' alt='')
+  .header-title
+    h1
+      | Lunch Recipes
+  .header-menu
+    a(href='/categories/lunch/healty' style='display: flex; align-items: center; justify-content: center;') Healty Lunch
+    //- a(href='/categories/lunch/quick' style='display: flex; align-items: center; justify-content: center;') Quick Lunch 
+    a(href='/categories/lunch/sandwich' style='display: flex; align-items: center; justify-content: center;') Sandwich
+    a(href='/categories/lunch/alllunch' style='display: flex; align-items: center; justify-content: center;') All Lunch
+main
+  //- a(href='/categories/lunch/quick')
+  //-   .title-ct
+  //-     h3
+  //-       | Quick Lunch
+  //-     i.fas.fa-arrow-right
+  //- .container-ct.container2
+  //-   a(href='#')
+  //-     .menu
+  //-       .card
+  //-         img(src='/soup.jpg')
+  //-         p.menu-p Lorem, ipsum dolor.
+  //-   a(href='#')
+  //-     .menu
+  //-       .card
+  //-         img(src='/soup.jpg')
+  //-         p.menu-p Lorem, ipsum dolor.
+  //-   a(href='#')
+  //-     .menu.menu-ct
+  //-       .card
+  //-         img(src='/soup.jpg')
+  //-         p.menu-p Lorem, ipsum dolor.
+  //- .card-ct768
+  //-   a(href='/categories/lunch/quick')
+  //-     img(src='/lily-banse--YHSwy6uqvk-unsplash (1).jpg' alt='')
+  //- p.card-ct-p Lorem, ipsum dolor.
+  //- .advertisement-2
+  //-   img(src='/indir.jpg' alt='')
+  //- .advertisement-728px
+  //-   img(src='/indir.jpg' alt='')
+  //- .advertisement-mobil
+  //-   img(src='/indir.jpg' alt='')
+  a(href='/categories/lunch/sandwich')
+    .title-ct
+      h3
+        | Sandwich
+      i.fas.fa-arrow-right
+  .container-ct.container2
+    a(href='/categories/lunch/1')
+      .menu
+        .card
+          img(src='/img/lunch/1.jpg')
+          p.menu-p Nashville Hot Chicken
+    a(href='/categories/lunch/7')
+      .menu
+        .card
+          img(src='/img/lunch/7.jpg')
+          p.menu-p Egg Salad for Sandwiches
+    a(href='/categories/lunch/8')
+      .menu.menu-ct
+        .card
+          img(src='/img/lunch/8.1.jpg')
+          p.menu-p Reuben Sandwich
+  .card-ct768
+    a(href='/categories/lunch/sandwich')
+      img(src='/img/sandwichlunch.jpg' alt='')
+    p.card-ct-p Lorem, ipsum dolor.
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
+  a(href='/categories/lunch/healty')
+    .title-ct
+      h3
+        | Healty Lunch
+      i.fas.fa-arrow-right
+  .container-ct.container2
+    a(href='/categories/lunch/3')
+      .menu
+        .card
+          img(src='/img/lunch/3.3.jpg')
+          p.menu-p Super Green Lunch Salad
+    a(href='/categories/lunch/4')
+      .menu
+        .card
+          img(src='/img/lunch/4.jpg')
+          p.menu-p Lentil Lunch Salad
+    a(href='/categories/lunch/5')
+      .menu.menu-ct
+        .card
+          img(src='/img/lunch/5.5.jpg')
+          p.menu-p Spicy Black-Eyed Peas
+  .card-ct768
+    a(href='/categories/lunch/healty')
+      img(src='/img/healtylunch.jpg' alt='')
+    p.card-ct-p Lorem, ipsum dolor.
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
+  a(href='/categories/lunch/alllunch')
+    .title-ct
+      h3
+        | All Lunch
+      i.fas.fa-arrow-right
+  .container-ct.container2
+    a(href='#')
+      .menu
+        .card
+          img(src='/soup.jpg')
+          p.menu-p Lorem, ipsum dolor.
+    a(href='#')
+      .menu
+        .card
+          img(src='/soup.jpg')
+          p.menu-p Lorem, ipsum dolor.
+    a(href='#')
+      .menu.menu-ct
+        .card
+          img(src='/soup.jpg')
+          p.menu-p Lorem, ipsum dolor.
+  .card-ct768
+    a(href='/categories/lunch/alllunch')
+      img(src='/img/lunchall.jpg' alt='')
+    p.card-ct-p Lorem, ipsum dolor.
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')

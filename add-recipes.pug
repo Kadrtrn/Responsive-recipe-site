@@ -1,0 +1,87 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Add Recipes
+  // font awesome
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css')
+  // Navbar css dosyaları
+  link(rel='stylesheet' href='/css/index/navbar/navbar.css')
+  // Form css dosyaları
+  link(rel='stylesheet' href='/css/form.css')
+  // Fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap' rel='stylesheet')
+nav
+  input#check(type='checkbox')
+  label.checkbtn(for='check')
+    i.fas.fa-bars
+  label.logo TASTEFULL
+  ul
+    li
+      a.active(href='/categories') Recipes
+    li
+      a.active(href='/categories/quickandeasy') Quick and Easy
+    li
+      a.active(href='/categories/snack') Snack
+    li
+      a.active(href='/categories/drink') Drink
+    li
+      a.active(href='/categories/dessert') Dessert
+    li
+      a.active(href='/categories/healty') Healty
+.none
+form.form(action='/admin/add-recipes' method='POST')
+  | Recipe&apos;s name 
+  br
+  input#name.sm(type='text' name='name' placeholder="Recipe's Name")
+  br
+  | &Idot;mage
+  input#img.sm(type='text' name='img' placeholder='img')
+  br
+  | Prep
+  input#prep.sm(type='text' name='prep' placeholder='Prep Time')
+  br
+  | Cook
+  input#cook.sm(type='text' name='cook' placeholder='Cook Time')
+  br
+  | Total
+  input#total.sm(type='text' name='total' placeholder='Total Time')
+  br
+  | Servings
+  input#total.sm(type='text' name='servings' placeholder='servings')
+  br
+  | Nutrition
+  input#nutrition.big(type='text' name='nutrition' placeholder='Nutrition')
+  br
+  | ingredients
+  input#ingredients.big(type='text' name='ingredients' placeholder='ingredients')
+  br
+  | Preparation
+  input#preparation.big(type='text' name='prepartion' placeholder='preparation')
+  br
+  |         categories
+  br
+  input#categories.sm(type='text' name='categories' placeholder='categories')
+  br
+  |         Tables
+  br
+  select#table(name='table' style='width: 300px; height: 50px;')
+    option(value='dinner') dinner
+    option(value='bread') bread
+    option(value='breakfast') breakfast
+    option(value='dessert') dessert
+    option(value='drink') drink
+    option(value='lunch') lunch
+    option(value='salad') salad
+    option(value='snack') snack
+    option(value='quickandeasy') quickandeasy
+    option(value='healty') healty
+  br
+  input.button(type='reset' value='Sıfırla')
+  input.button(type='submit' value='Ekle')

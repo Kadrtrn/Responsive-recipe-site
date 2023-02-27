@@ -1,0 +1,325 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Tastefull Dinner
+  // font awesome
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css')
+  // Navbar css dosyaları
+  link(rel='stylesheet' href='/css/index/navbar/navbar.css')
+  // Container2 css dosyaları
+  link(rel='stylesheet' href='/css/index/main-container2/container2.css')
+  // Header css dosyaları
+  link(rel='stylesheet' href='/css/Recipespages/header.css')
+  // Main css dosyaları
+  link(rel='stylesheet' href='/css/Recipespages/main.css')
+  // Fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap' rel='stylesheet')
+  //title icon
+  
+  link(rel='icon' href='/titleicon.png' type='image/icon type')
+  // Logo Google Fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap' rel='stylesheet')
+  style.
+    a:link{
+    color: #000000;
+    }
+    a:visited{
+      color:#000000;
+    }
+nav
+  input#check(type='checkbox')
+  label.checkbtn(for='check')
+    i.fas.fa-bars
+  label.logo 
+    a(href="/") TASTEFULL
+  ul
+    li
+      a.active(href='/categories') Recipes
+    li
+      a.active(href='/categories/quickandeasy') Quick and Easy
+    li
+      a.active(href='/categories/snack') Snack
+    li
+      a.active(href='/categories/drink') Drink
+    li
+      a.active(href='/categories/dessert') Dessert
+    li
+      a.active(href='/categories/healty') Healty
+.none
+header
+  .advertisement-970-250
+    img(src='/970x250.jpg' alt='')
+  .advertisement-728-90
+    img(src='/970x250.jpg' alt='')
+  .advertisement-300-100
+    img(src='/970x250.jpg' alt='')
+  .header-title
+    h1
+      | Dinner Recipes
+  .header-menu
+    a(href='/categories/dinner/familydinner' style='display: flex; align-items: center; justify-content: center;') Family Dinner
+    //- a(href='/categories/dinner/sidedishes' style='display: flex; align-items: center; justify-content: center;') Side Dishes 
+    //- a(href='/categories/dinner/diets' style='display: flex; align-items: center; justify-content: center;') Diets
+    a(href='/categories/dinner/quickandeasy' style='display: flex; align-items: center; justify-content: center;') Quick and Easy 
+    a(href='/categories/dinner/seafood' style='display: flex; align-items: center; justify-content: center;') Seafood 
+    a(href='/categories/dinner/chicken' style='display: flex; align-items: center; justify-content: center;') Chicken 
+    a(href='/categories/dinner/pasta' style='display: flex; align-items: center; justify-content: center;') Pasta 
+    a(href='/categories/dinner/alldinner' style='display: flex; align-items: center; justify-content: center;') All Dinner
+main
+  a(href='/categories/dinner/familydinner')
+    .title-ct
+      h3
+        | Family Recipes
+      i.fas.fa-arrow-right
+  .container-ct.container2
+    a(href='/categories/dinner/1')
+      .menu
+        .card
+          img(src='/img/dinner/1.jpg')
+          p.menu-p Chimichurri Baked Chicken
+    a(href='/categories/dinner/11')
+      .menu
+        .card
+          img(src='/img/dinner/9.jpg')
+          p.menu-p Creamy Garlic Butter Salmon
+    a(href='/categories/dinner/15')
+      .menu.menu-ct
+        .card
+          img(src='/img/dinner/21.1.jpg')
+          p.menu-p Spicy Black-Eyed Peas
+  .card-ct768
+    a(href='/categories/dinner/familydinner')
+      img(src='/img/dinner.jpg' alt='')
+    p.card-ct-p Lorem, ipsum dolor.
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
+  //- a(href='/categories/dinner/sidedishes')
+  //-   .title-ct
+  //-     h3
+  //-       | Side Dishes
+  //-     i.fas.fa-arrow-right
+  //- .container-ct.container2
+  //-   a(href='#')
+  //-     .menu
+  //-       .card
+  //-         img(src='/soup.jpg')
+  //-         p.menu-p Lorem, ipsum dolor.
+  //-   a(href='#')
+  //-     .menu
+  //-       .card
+  //-         img(src='/soup.jpg')
+  //-         p.menu-p Lorem, ipsum dolor.
+  //-   a(href='#')
+  //-     .menu.menu-ct
+  //-       .card
+  //-         img(src='/soup.jpg')
+  //-         p.menu-p Lorem, ipsum dolor.
+  //- .card-ct768
+  //-   a(href='/categories/dinner/sidedishes')
+  //-     img(src='/lily-banse--YHSwy6uqvk-unsplash (1).jpg' alt='')
+  //-   p.card-ct-p Lorem, ipsum dolor.
+  //- .advertisement-2
+  //-   img(src='/indir.jpg' alt='')
+  //- .advertisement-728px
+  //-   img(src='/indir.jpg' alt='')
+  //- .advertisement-mobil
+  //-   img(src='/indir.jpg' alt='')
+  //- a(href='/categories/dinner/diets')
+  //-   .title-ct
+  //-     h3
+  //-       | Diets
+  //-     i.fas.fa-arrow-right
+  //- .container-ct.container2
+  //-   a(href='#')
+  //-     .menu
+  //-       .card
+  //-         img(src='/soup.jpg')
+  //-         p.menu-p Lorem, ipsum dolor.
+  //-   a(href='#')
+  //-     .menu
+  //-       .card
+  //-         img(src='/soup.jpg')
+  //-         p.menu-p Lorem, ipsum dolor.
+  //-   a(href='#')
+  //-     .menu.menu-ct
+  //-       .card
+  //-         img(src='/soup.jpg')
+  //-         p.menu-p Lorem, ipsum dolor.
+  //- .card-ct768
+  //-   a(href='/categories/dinner/diets')
+  //-     img(src='/lily-banse--YHSwy6uqvk-unsplash (1).jpg' alt='')
+  //-   p.card-ct-p Lorem, ipsum dolor.
+  //- .advertisement-2
+  //-   img(src='/indir.jpg' alt='')
+  //- .advertisement-728px
+  //-   img(src='/indir.jpg' alt='')
+  //- .advertisement-mobil
+  //-   img(src='/indir.jpg' alt='')
+  a(href='/categories/dinner/quickandeasy')
+    .title-ct
+      h3
+        | Quick and Easy
+      i.fas.fa-arrow-right
+  .container-ct.container2
+    a(href='/catego/categories/dinner/18')
+      .menu
+        .card
+          img(src='/img/dinner/15.jpg')
+          p.menu-p EASY BEEF AND BROCCOLI
+    a(href='/categories/dinner/22')
+      .menu
+        .card
+          img(src='/img/dinner/19.1.jpg')
+          p.menu-p Spicy tuna avocado wrap
+    a(href='/categories/dinner/19')
+      .menu.menu-ct
+        .card
+          img(src='/img/dinner/16.jpg')
+          p.menu-p 1-Pot Chickpea Shakshuka
+  .card-ct768
+    a(href='/categories/dinner/quickandeasy')
+      img(src='/img/quickdinner.jpg' alt='')
+    p.card-ct-p Lorem, ipsum dolor.
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
+  a(href='/categories/dinner/seafood')
+    .title-ct
+      h3
+        | Seafood
+      i.fas.fa-arrow-right
+  .container-ct.container2
+    a(href='/categories/dinner/13')
+      .menu
+        .card
+          img(src='/img/dinner/11.1.jpg')
+          p.menu-p California Rolls+Sushi Rice
+    a(href='/categories/dinner/10')
+      .menu
+        .card
+          img(src='/img/dinner/8.jpg')
+          p.menu-p Garlic Salmon and Asparagus
+    a(href='/categories/dinner/12')
+      .menu.menu-ct
+        .card
+          img(src='/img/dinner/10.jpg')
+          p.menu-p Maple-glazed Salmon
+  .card-ct768
+    a(href='/categories/dinner/seafood')
+      img(src='/img/dinnerseafood.jpg' alt='')
+    p.card-ct-p Lorem, ipsum dolor.
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
+  a(href='/categories/dinner/chicken')
+    .title-ct
+      h3
+        | Chicken
+      i.fas.fa-arrow-right
+  .container-ct.container2
+    a(href='/categories/dinner/8')
+      .menu
+        .card
+          img(src='/img/dinner/6.jpg')
+          p.menu-p Garlic Butter Chicken
+    a(href='/categories/dinner/28')
+      .menu
+        .card
+          img(src='/img/dinner/23.3.jpg')
+          p.menu-p Baked Chicken Wings
+    a(href='/categories/dinner/29')
+      .menu.menu-ct
+        .card
+          img(src='/img/dinner/24.jpg')
+          p.menu-p Air-Fried Korean Chicken Wings
+  .card-ct768
+    a(href='/categories/dinner/chicken')
+      img(src='/img/dinnerchicken.jpg' alt='')
+    p.card-ct-p Lorem, ipsum dolor.
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
+  a(href='/categories/dinner/pasta')
+    .title-ct
+      h3
+        | Pasta
+      i.fas.fa-arrow-right
+  .container-ct.container2
+    a(href='/categories/dinner/2')
+      .menu
+        .card
+          img(src='/img/dinner/2.jpg')
+          p.menu-p Chicken Mushroom Pasta
+    a(href='/categories/dinner/6')
+      .menu
+        .card
+          img(src='/img/dinner/5.jpg')
+          p.menu-p Easy Chicken Pesto Pasta
+    a(href='/categories/dinner/5')
+      .menu.menu-ct
+        .card
+          img(src='/img/dinner/4.jpg')
+          p.menu-p Easy Macaroni Salad (Vegan)
+  .card-ct768
+    a(href='/categories/dinner/pasta')
+      img(src='/img/dinnerpasta.jpg' alt='')
+    p.card-ct-p Lorem, ipsum dolor.
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
+  a(href='/categories/dinner/alldinner')
+    .title-ct
+      h3
+        | All Dinner
+      i.fas.fa-arrow-right
+  .container-ct.container2
+    a(href='/categories/dinner/1')
+      .menu
+        .card
+          img(src='/img/dinner/1.jpg')
+          p.menu-p Chimichurri Baked Chicken
+    a(href='/categories/dinner/11')
+      .menu
+        .card
+          img(src='/img/dinner/9.jpg')
+          p.menu-p Creamy Garlic Butter Salmon
+    a(href='/categories/dinner/15')
+      .menu.menu-ct
+        .card
+          img(src='/img/dinner/21.1.jpg')
+          p.menu-p Spicy Black-Eyed Peas
+  .card-ct768
+    a(href='/categories/dinner/alldinner')
+      img(src='/img/dinnerall.jpg' alt='')
+    p.card-ct-p Lorem, ipsum dolor.
+  .advertisement-2
+    img(src='/indir.jpg' alt='')
+  .advertisement-728px
+    img(src='/indir.jpg' alt='')
+  .advertisement-mobil
+    img(src='/indir.jpg' alt='')
